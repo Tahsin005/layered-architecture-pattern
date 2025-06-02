@@ -20,7 +20,7 @@ type todoRepo struct {
 	db *sql.DB
 }
 
-func NewTodoRepository(db *sql.DB) *todoRepo {
+func NewTodoRepository(db *sql.DB) TodoRepository {
 	return &todoRepo{db: db}
 }
 
